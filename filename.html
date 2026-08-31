@@ -2,3 +2,16 @@ http://localhost/nextstep/
 http://localhost/nextstep/index.php
 
 https://github.com/Gharge123/nextstep/
+
+<div class="logo-grid">
+    <?php foreach ($clients as $client): ?>
+        <div data-fade>
+            <img
+    src="<?= e(url('assets/images/clients/' . basename($client['clients_img']))) ?>"
+    alt="Client Logo"
+    loading="lazy"
+    >
+        </div>
+    <?php endforeach; ?>
+  </div>
+
